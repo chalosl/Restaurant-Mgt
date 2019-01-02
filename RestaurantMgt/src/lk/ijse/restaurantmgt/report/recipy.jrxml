@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="recipy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f921c482-9be3-4b5f-82aa-9c3c317a51b1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="restaurant"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="96ad80d7-4d39-4431-89d0-da8d29c97813">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="restaurant"/>
+		<queryString language="SQL">
+			<![CDATA[select * from recipy]]>
+		</queryString>
+		<field name="foodId" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="foodId"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+		</field>
+		<field name="foodName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="foodName"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+		</field>
+		<field name="ingrediantId" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ingrediantId"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+		</field>
+		<field name="ingrediant_Name" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="ingrediant_Name"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+		</field>
+		<group name="foodId">
+			<groupExpression><![CDATA[$F{foodId}]]></groupExpression>
+		</group>
+		<group name="foodName">
+			<groupExpression><![CDATA[$F{foodName}]]></groupExpression>
+		</group>
+		<group name="ingrediantId">
+			<groupExpression><![CDATA[$F{ingrediantId}]]></groupExpression>
+		</group>
+		<group name="ingrediant_Name">
+			<groupExpression><![CDATA[$F{ingrediant_Name}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from recipy]]>
+	</queryString>
+	<field name="foodId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="foodId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+	</field>
+	<field name="foodName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="foodName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+	</field>
+	<field name="ingrediantId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ingrediantId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+	</field>
+	<field name="ingrediant_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ingrediant_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="recipy"/>
+	</field>
+	<group name="foodId">
+		<groupExpression><![CDATA[$F{foodId}]]></groupExpression>
+	</group>
+	<group name="foodName">
+		<groupExpression><![CDATA[$F{foodName}]]></groupExpression>
+	</group>
+	<group name="ingrediantId">
+		<groupExpression><![CDATA[$F{ingrediantId}]]></groupExpression>
+	</group>
+	<group name="ingrediant_Name">
+		<groupExpression><![CDATA[$F{ingrediant_Name}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="53" y="30" width="200" height="30" uuid="34930ca6-a192-4782-8c64-aeb648930c57"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RESTAURANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="7" width="118" height="33" uuid="0f8fc35f-4974-4637-bde4-62b1951ea730"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOORS ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="10" width="43" height="50" uuid="bf94e180-0e86-4004-ab96-8ca1fb610042"/>
+				<imageExpression><![CDATA["C:/Users/CHALO/Downloads/Chef Hat_50px.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="95" y="15" width="370" height="30" uuid="2fa42cb4-2b29-46d6-a4eb-91825d5c0e85"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[LIST OF RECIPY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="266" splitType="Stretch">
+			<componentElement>
+				<reportElement x="80" y="66" width="400" height="200" uuid="df7517de-c33b-4e03-a4f6-2f072153d0a6">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset1" uuid="9b3c6f55-dbdb-4128-b6c6-037554acd1bd">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="1a73d161-ef90-4161-ad57-47e9ca0cfef2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="678ee73c-5255-42e5-b6ad-9c723aa2ed6e"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[foodId]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="645e9da4-ed82-4480-898f-e4dbd8b747b1"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{foodId}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="646c0b82-b668-4517-b723-bba02613d94a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="086306aa-b568-4052-a998-ce58c61e45dc"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[foodName]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="1096d11a-8bfe-471a-a57a-cba5c1b6ce7f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{foodName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="c1f8df2d-0332-44d2-b482-b780dc1ed311">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="379591aa-df38-4e2e-a20c-b196a3227dc2"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ingrediantId]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="9f8b91d1-e0c3-4ce2-a3d9-93d70562d70f"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ingrediantId}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="fb72b80e-c20f-4382-8c53-69d2e1d9b8fc">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="2a1f16e2-8cb8-4290-820e-6f81ec8f74b9"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[ingrediant_Name]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="6d4f394b-598f-479e-b817-44f8ff25054e"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{ingrediant_Name}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

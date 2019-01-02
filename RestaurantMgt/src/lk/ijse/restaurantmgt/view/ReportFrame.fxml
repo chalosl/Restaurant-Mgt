@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurantmgt.controller.ReportController">
+   <children>
+      <JFXButton fx:id="btnCustomer" layoutX="53.0" layoutY="135.0" onMouseClicked="#customerAction" prefHeight="61.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="Customer" textFill="WHITE" />
+      <JFXButton fx:id="btnFood" layoutX="228.0" layoutY="135.0" onMouseClicked="#foodAction" prefHeight="61.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="Food" textFill="WHITE" />
+      <Label layoutX="21.0" layoutY="25.0" prefHeight="51.0" prefWidth="273.0" text="View Reports" textFill="#d50000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnChef" layoutX="411.0" layoutY="135.0" onAction="#chefAction" prefHeight="61.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="Chef" textFill="WHITE" />
+      <JFXButton fx:id="btnIngrediant" layoutX="614.0" layoutY="135.0" onAction="#ingrediantAction" prefHeight="61.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="Ingrediants" textFill="WHITE" />
+      <JFXButton fx:id="btnFoodOrder" layoutX="128.0" layoutY="263.0" onAction="#foodOrderAction" onMouseClicked="#customerAction" prefHeight="71.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="FoodOrderDetail" textFill="WHITE" />
+      <JFXButton fx:id="btnMealOrder" layoutX="321.0" layoutY="263.0" onAction="#mealOrderAction" onMouseClicked="#customerAction" prefHeight="71.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="MealOrder" textFill="WHITE" />
+      <JFXButton fx:id="btnRecipy" layoutX="520.0" layoutY="251.0" onAction="#recipyAction" onMouseClicked="#customerAction" prefHeight="71.0" prefWidth="122.0" style="-fx-background-color: #607d8b;" text="Recipy" textFill="WHITE" />
+   </children>
+</AnchorPane>

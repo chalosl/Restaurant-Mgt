@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="chef" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="43d06af2-b538-4f96-9ec8-742741db37bc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="restaurant"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="868ec7c7-1a73-4007-862a-ad8a6e417bf4">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="restaurant"/>
+		<queryString language="SQL">
+			<![CDATA[select * from chef]]>
+		</queryString>
+		<field name="chefId" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chefId"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="chefName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chefName"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="phonenumber" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="phonenumber"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="address" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="address"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<group name="chefId">
+			<groupExpression><![CDATA[$F{chefId}]]></groupExpression>
+		</group>
+		<group name="chefName">
+			<groupExpression><![CDATA[$F{chefName}]]></groupExpression>
+		</group>
+		<group name="phonenumber">
+			<groupExpression><![CDATA[$F{phonenumber}]]></groupExpression>
+		</group>
+		<group name="address">
+			<groupExpression><![CDATA[$F{address}]]></groupExpression>
+		</group>
+	</subDataset>
+	<subDataset name="Dataset2" uuid="7489d20e-4c92-4a75-a707-bc7513c4f411">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="restaurant"/>
+		<queryString language="SQL">
+			<![CDATA[select * from chef]]>
+		</queryString>
+		<field name="chefId" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chefId"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="chefName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chefName"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="phonenumber" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="phonenumber"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<field name="address" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="address"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+		</field>
+		<group name="chefId">
+			<groupExpression><![CDATA[$F{chefId}]]></groupExpression>
+		</group>
+		<group name="chefName">
+			<groupExpression><![CDATA[$F{chefName}]]></groupExpression>
+		</group>
+		<group name="phonenumber">
+			<groupExpression><![CDATA[$F{phonenumber}]]></groupExpression>
+		</group>
+		<group name="address">
+			<groupExpression><![CDATA[$F{address}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from chef]]>
+	</queryString>
+	<field name="chefId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chefId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+	</field>
+	<field name="chefName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chefName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+	</field>
+	<field name="phonenumber" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="phonenumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chef"/>
+	</field>
+	<group name="chefId">
+		<groupExpression><![CDATA[$F{chefId}]]></groupExpression>
+	</group>
+	<group name="chefName">
+		<groupExpression><![CDATA[$F{chefName}]]></groupExpression>
+	</group>
+	<group name="phonenumber">
+		<groupExpression><![CDATA[$F{phonenumber}]]></groupExpression>
+	</group>
+	<group name="address">
+		<groupExpression><![CDATA[$F{address}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="10" width="43" height="40" uuid="9436e265-ebaf-4271-87ae-4b69c80a4e5f"/>
+				<imageExpression><![CDATA["C:/Users/CHALO/Downloads/Chef Hat_50px.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="53" y="30" width="200" height="30" uuid="fceefdba-1255-41b5-81d9-2b86e9553410"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RESTAURANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="7" width="118" height="33" uuid="88bb3648-2e8c-469e-987a-db9fab13b8bb"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOORS ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="180" y="10" width="200" height="30" uuid="6b97103e-988f-419d-98de-5fddf3a26756"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[LIST OF CHEF'S]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="321" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="70" width="556" height="200" uuid="1a31f123-3b9a-4cd1-a8e1-645cc07d0729">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset2" uuid="c1a24553-2791-49cf-a07a-94c0ce36fa8d">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="6849aced-edd5-471c-b15a-24e9b9182655">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="e67a7a18-b74b-49aa-a0af-549aed6bd6cc"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[chefId]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="8671e421-24eb-4c58-ae40-a49718da05f4"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{chefId}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="200" uuid="e34cfb0d-2409-47a8-9992-c22d522d992c">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="200" height="30" uuid="0649cce0-a31a-4f40-b5ac-8245a5f0227a"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[chefName]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="200" height="30" uuid="837aa480-47e4-4b8b-bae6-6922476eeeb6"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{chefName}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="13b99220-109b-4e8f-a6f9-0e2cf0455164">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="8ccf8834-aad8-4911-90f7-352611c12ccf"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[phonenumber]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="d71f31a3-a700-479a-a49a-f17773932ee8"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{phonenumber}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="165" uuid="868322e5-a441-4720-ba51-04b5cd7fc98d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:tableFooter style="Table_TH" height="30"/>
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="165" height="30" uuid="8f56930c-1b83-424d-a13a-6c53e93b71eb"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[address]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="165" height="30" uuid="834effc0-3636-470b-9de1-f643aac7f595"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

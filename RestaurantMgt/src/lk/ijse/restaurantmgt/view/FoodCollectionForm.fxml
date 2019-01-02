@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="foodPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="886.0" style="-fx-background-color: white\;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurantmgt.controller.FoodCollectionController">
+   <children>
+      <JFXTextField fx:id="txtUnitPrice" focusColor="#d50000" labelFloat="true" layoutX="28.0" layoutY="222.0" onAction="#unitPriceAction" prefHeight="25.0" prefWidth="270.0" promptText="Unit Price" />
+      <JFXTextField fx:id="txtFoodName" focusColor="#d50000" labelFloat="true" layoutX="28.0" layoutY="171.0" onAction="#foodNameAction" prefHeight="25.0" prefWidth="270.0" promptText="Food Name" />
+      <JFXTextField fx:id="txtQuantity" focusColor="#d50000" labelFloat="true" layoutX="24.0" layoutY="269.0" onAction="#qtyOnAction" prefHeight="25.0" prefWidth="277.0" promptText="Quantity" />
+      <JFXButton fx:id="newFoodID" layoutX="731.0" layoutY="63.0" onMouseClicked="#clickNewFood" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #d50000;" text="Add New Food " textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="154.0" layoutY="335.0" onMouseClicked="#updateFood" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #d50000;" text="Update" textFill="WHITE" />
+      <JFXTextField fx:id="searchFoodID" focusColor="#d50000" labelFloat="true" layoutX="616.0" layoutY="31.0" onAction="#searchFoodAction" prefHeight="25.0" prefWidth="256.0" promptText="Search Food" />
+      <TableView fx:id="tblFood" layoutX="307.0" layoutY="145.0" onMouseClicked="#foodTableMouseClick" prefHeight="426.0" prefWidth="569.0">
+         <columns>
+            <TableColumn prefWidth="98.0" text="Food ID" />
+            <TableColumn prefWidth="90.0" text="Food Name" />
+            <TableColumn prefWidth="124.0" text="Chef ID" />
+            <TableColumn prefWidth="131.0" text="Unit Price" />
+            <TableColumn prefWidth="125.0" text="Quantity" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="7.0" layoutY="335.0" onAction="#addFood" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #d50000;" text="Save" textFill="WHITE" />
+      <JFXButton fx:id="btnCancel" layoutX="81.0" layoutY="335.0" onMouseClicked="#cancelFood" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #d50000;" text="Cancel" textFill="WHITE" />
+      <JFXTextField fx:id="txtFoodID" focusColor="#d50000" labelFloat="true" layoutX="28.0" layoutY="129.0" onAction="#foodIdAction" prefHeight="25.0" prefWidth="100.0" promptText="Food ID">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnDelete" layoutX="226.0" layoutY="335.0" onMouseClicked="#deleteFood" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #d50000;" text="Delete" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="9.0" layoutY="13.0" prefHeight="53.0" prefWidth="277.0" text="Food Collection" textFill="#c90c0c">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Hamburger_96px.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="chefIdCombo" focusColor="#d50000" labelFloat="true" layoutX="147.0" layoutY="129.0" onAction="#chefIdComboAction" prefHeight="25.0" prefWidth="83.0" promptText="chef ID" />
+      <JFXButton fx:id="btnRecipy" layoutX="731.0" layoutY="95.0" onMouseClicked="#clickRecipy" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #d50000;" text="Recipy" textFill="WHITE" />
+   </children>
+</AnchorPane>
